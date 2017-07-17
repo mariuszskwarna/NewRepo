@@ -1,4 +1,4 @@
-#include <sdtio.h>
+#include <stdio.h>
 
 void fun(int jezyk){
 
@@ -7,13 +7,7 @@ switch (jezyk){
   break;
  case 2: printf("Welcome in program dude \n");
   break;
- default: printf("Error 404: option not found \n")
+ default: printf("Error 404: option not found \n");
   break;
 }
-
-int main(){
-fun();
-
-
-return 0;
-};
+}

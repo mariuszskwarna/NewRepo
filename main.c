@@ -1,14 +1,14 @@
 #include <stdio.h>
-#include "fun.h"
+#include "fun.c"
 
 int main(int argc, char* argv[]){
 
 	int i=0;
-	scanf("Polskie menu:1 / English menu:2 : ",&i);
+	printf("Polskie menu:1 / English menu:2 : ");
+	scanf("%d",&i);
 	
-	if(i==1 || i==2)
-		menu(i);
-	else printf("Niepoprawna opcja / bad option");
+	if(i==1 || i==2) fun(i);
+	else printf("Niepoprawna opcja / bad option\n");
 
-return 0
+return 0;
 }
